@@ -24,13 +24,6 @@ echo "* Cleaning up."
 pkgin clean
 rm -rf /root/*
 
-/usr/bin/rm -rf /opt/local
-/usr/bin/curl -k http://pkgsrc.joyent.com/packages/SmartOS/bootstrap/bootstrap-2014Q2-i386.tar.gz | /usr/bin/gzcat | /usr/bin/tar -xf - -C /
-
-pkg_add http://pkgsrc.joyent.com/packages/SmartOS/2014Q2/i386/All/smtools-20140829.tgz
-pkg_add http://pkgsrc.joyent.com/packages/SmartOS/2014Q2/i386/All/zoneinit-1.6.8.tgz
-pkg_add http://pkgsrc.joyent.com/packages/SmartOS/2014Q2/i386/All/rsyslog-8.2.2nb3.tgz
-
 cat > /opt/local/etc/rsyslog.conf << EOF
 #
 # Sample rsyslog configuration file
