@@ -1,3 +1,13 @@
+0.67-2:
+- Install HAProxy and use it to proxy HTTP/HTTPS to dsapid which now listens
+on localhost only.
+
+0.6.7-1:
+- Use different fork of builder UI (that foregoes the hard-coded mentions of 'datasets.at')
+
+0.6.7-0:
+- Update to more recent base image
+
 0.6.7: bugfix release
 - BUGFIX: syncing from the /api/datasets route should sync manifest options
 - sync for LX brand images
