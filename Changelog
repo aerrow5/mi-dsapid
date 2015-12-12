@@ -1,3 +1,6 @@
+0.6.7-2aerrow: 
+- Removed rsyslog option
+
 0.67-2:
 - Install HAProxy and use it to proxy HTTP/HTTPS to dsapid which now listens
 on localhost only.
