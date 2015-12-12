@@ -24,26 +24,5 @@ echo "* Cleaning up."
 pkgin clean
 rm -rf /root/*
 
-cat > /opt/local/etc/rsyslog.conf << EOF
-#
-# Sample rsyslog configuration file
-#
-
-$ModLoad immark
-$ModLoad imsolaris
-# $ModLoad imtcp
-# $ModLoad imudp
-
-*.err;kern.notice;auth.notice                   /dev/sysmsg
-*.err;kern.debug;daemon.notice;mail.crit        /var/adm/messages
-*.alert;kern.err;daemon.err                     :omusrmsg:operator
-*.alert                                         :omusrmsg:root
-*.emerg                                         :omusrmsg:*
-
-mail.debug                                      /var/log/syslog
-mail.info                                       /var/log/maillog
-auth.info                                       /var/log/authlog
-EOF
-
 # Prepare image for provisioning
 sm-prepare-image -y
