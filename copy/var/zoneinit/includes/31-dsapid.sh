@@ -64,6 +64,14 @@ if [[ ! -e /data/users.json ]]; then
     "name": "jpc",
     "type": "system",
     "provider": "joyent"
+  },
+  {
+    "uuid": "12345678-1234-1234-1234-123456789012",
+    "name": "admin",
+    "token": "admin",
+    "roles": ["s_dataset.upload","s_dataset.manage","s_dataset.admin","admin"],
+    "type": "user",
+    "provider": "community"
   }
 ]
 EOF
