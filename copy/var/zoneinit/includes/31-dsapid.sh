@@ -24,27 +24,11 @@ if [[ ! -e /data/config.json ]]; then
   "users": "/data/users.json",
   "sync": [
     {
-      "name": "official joyent dsapi",
-      "active": false,
-      "type": "dsapi",
-      "provider": "joyent",
-      "source": "https://datasets.joyent.com/datasets",
-      "delay": "24h"
-    },
-    {
-      "name": "official joyent imgapi",
-      "active": false,
-      "type": "imgapi",
-      "provider": "joyent",
-      "source": "https://images.joyent.com/images",
-      "delay": "24h"
-    },
-    {
-      "name": "datasets.at",
-      "active": false,
+      "name": "datasets.at repository",
+      "active": true,
       "type": "dsapi",
       "provider": "community",
-      "source": "http://datasets.at/api/datasets",
+      "source": "http://datasets.at/datasets?name=base-64&amp;version=15.3.0",
       "delay": "24h"
     }
   ]
