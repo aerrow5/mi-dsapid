@@ -30,7 +30,15 @@ if [[ ! -e /data/config.json ]]; then
       "provider": "community",
       "source": "http://datasets.at/datasets?name=base-64&amp;version=15.3.0",
       "delay": "24h"
-    }
+    },
+    {
+      "name": "datasets.at repository",
+      "active": true,
+      "type": "dsapi",
+      "provider": "community",
+      "source": "http://datasets.at/datasets?name=minimal-64&amp;version=15.3.0",
+      "delay": "24h"
+    }    
   ]
 }
 EOF
