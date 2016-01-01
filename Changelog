@@ -1,3 +1,6 @@
+0.67-4:
+ - Enable HAProxy logging through rsyslog
+
 0.6.7-2aerrow: 
 - Removed rsyslog option
 
