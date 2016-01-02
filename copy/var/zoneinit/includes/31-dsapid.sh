@@ -24,7 +24,7 @@ if [[ ! -e /data/config.json ]]; then
   "users": "/data/users.json",
   "sync": [
     {
-      "name": "datasets.at repository",
+      "name": "base-64 from datasets.at repository",
       "active": true,
       "type": "dsapi",
       "provider": "community",
@@ -32,7 +32,7 @@ if [[ ! -e /data/config.json ]]; then
       "delay": "24h"
     },
     {
-      "name": "datasets.at repository",
+      "name": "minimal-64 from datasets.at repository",
       "active": true,
       "type": "dsapi",
       "provider": "community",
